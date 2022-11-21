@@ -3,7 +3,7 @@
       <div id="orderList">
         <div v-for="(order, key) in orders" v-bind:key="'order'+key">
           <p>
-            #{{ key }}: {{ order.orderItems.}} <br>
+            #{{ key }}: {{ order.orderItems}} <br>
           {{order.customerNa}} ({{order.customerEm}}, {{order.customerPmt}}, {{order.customerGender}})
           </p>
           

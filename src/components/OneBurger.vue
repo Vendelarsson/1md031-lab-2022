@@ -5,11 +5,12 @@
       <img v-bind:src="burger.url" alt="">
       <ul>
         <li> {{ burger.kCal }} kCal </li>
-        <li>Contains <span class="ingredients">{{ burger.lactose }}</span> </li>
-        <li>Contains <span class="ingredients">{{ burger.gluten }}</span> </li>
+        <li v-if="burger.lactose" >Contains <span class="ingredients"> lactose </span> </li>
+        <li v-if="burger.gluten">Contains <span class="ingredients"> gluten </span> </li>
       </ul>
 
       <p>
+        Amount: 
         <button v-on:click="removeBurger"> - </button>
         {{amountOrdered}}
         <button v-on:click="addBurger"> + </button>
@@ -42,7 +43,9 @@ export default {
       );
     },
     removeBurger: function () {
-      this.amountOrdered -= 1;
+      if(this.amountOrdered>0){
+        this.amountOrdered -= 1;
+      }
       this.$emit('orderedBurger', {
         name: this.burger.name,
         amount: this.amountOrdered
@@ -72,6 +75,12 @@ export default {
 .amount {
   display: inline-block;
   font-size: 20px
+}
+.box p{
+  font-size: 20px;
+}
+.box li {
+  font-size: 20px;
 }
 </style>
   

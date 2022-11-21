@@ -17,7 +17,7 @@
         <div class="wrapper">
           <Burger v-for="burger in burgers" v-bind:burger="burger" v-bind:key="burger.name"
             v-on:orderedBurger="addToOrder($event)" />
-          <p>Amount ordered:</p>
+            
         </div>
 
       </section>
@@ -118,7 +118,7 @@ export default {
       na: '',
       em: '',
       gender: '',
-      pmt: 'Swish',
+      pmt: 'Card',
       orderedBurgers: {},
       location: {
         x: 0,
@@ -134,7 +134,7 @@ export default {
 
     submit: function () {
       console.log(this.na, this.em, this.gender, this.pmt)
-      console.log(this.orderedBurgers.value)
+      console.log(this.orderedBurgers)
 
       socket.emit("addOrder", {
         orderId: this.getOrderNumber(),
