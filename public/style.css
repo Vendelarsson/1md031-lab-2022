@@ -1,1 +1,88 @@
 /*empty*/
+
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+footer{
+    border-top: 2px solid black;
+}
+
+section{
+    margin: 30px;
+}
+
+header img{
+    position: relative;
+    width:100%;
+    height: auto;
+    opacity: 0.5;
+}
+header {
+    height: 300px;
+    overflow: hidden;
+
+}
+
+.ingredients{
+    font-weight: bold;
+}
+
+#Hamburgers{
+    
+    color: white;
+    background-color: black;
+    border: 2px dashed;
+    padding: 10px;
+    
+}
+
+#customer{
+    background-color: white;
+    border: 2px dashed;
+    padding: 10px;
+    
+}
+button:hover{
+    background-color: rgb(160, 230, 255);
+    cursor: pointer
+}
+
+button{
+    margin: 20px;
+}
+
+button img{
+    width: 50px;
+    
+}
+
+header h1{
+    font-size: 60px;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    margin-top: -190px;
+    margin-left: -50px;
+
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 400px 400px 400px;
+
+}
+.wrapper img{
+    width: 400px;
+}
+.box {
+    
+    border-radius: 5px;
+    padding: 20px;
+    margin-left: 20px;
+    font-size: 150%;
+}
+
+
