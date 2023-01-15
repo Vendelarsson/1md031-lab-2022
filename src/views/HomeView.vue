@@ -80,7 +80,7 @@
     </button>
 
     <footer>
-      &copy 2018 vendelas burger
+      <p>&copy; 2018 vendelas burger</p>
     </footer>
   </body>
 </template>
@@ -93,18 +93,7 @@ import menu from '../assets/menu.json'
 
 const socket = io();
 
-function MenuItem(n, url, kcal, lact, glut) {
-  this.name = n; // The *this* keyword refers to the object itself
-  this.url = url;
-  this.kcal = kcal;
-  this.lactose = lact;
-  this.gluten = glut;
 
-}
-
-const list_of_burgers = [new MenuItem('Fireburger', 'https://images.ohmyhosting.se/ie1i7Wt-F3j_nOJfadWoldwQ6iQ=/804x1078/smart/filters:quality(85)/https%3A%2F%2Fbastardburgers.com%2Fwp-content%2Fuploads%2Fsites%2F6%2F2020%2F12%2Fwebb-_0000s_0016_new-york.jpg.jpg', '500', 'true', 'true'),
-new MenuItem('Chickenburger', 'https://images.ohmyhosting.se/P5kVzNntfS_wg4c2XcSsY4mlUhA=/804x1078/smart/filters:quality(85)/https%3A%2F%2Fbastardburgers.com%2Fwp-content%2Fuploads%2Fsites%2F6%2F2022%2F01%2Fwebb-_0000s_0017_no-chicken-chicago.jpg.jpg', '500', 'false', 'true'),
-new MenuItem('Veganburger', 'https://images.ohmyhosting.se/iHq3oKzy8yawj0Xl6gpRHrXkSFc=/804x1078/smart/filters:quality(85)/https%3A%2F%2Fbastardburgers.com%2Fwp-content%2Fuploads%2Fsites%2F6%2F2022%2F01%2Fwebb-_0000s_0001_GO-london.jpg.jpg', '500', 'true', 'true')];
 
 export default {
   name: 'HomeView',

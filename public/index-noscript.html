@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <title>Hambuergersite</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <header>
+            <img src="https://www.gallerian.se/contentassets/667a269d11524a339d2153c2274a16e3/bastard-burgers-header.jpg?preset=16x8-1200&version=63697923645"
+                alt="">
+            <h1> Welcome to Burger place</h1>
+        </header>
+    </section>
+    <main>
+        <section id="Hamburgers">
+            <h2>Selcet a burger</h2>
+            <p>This is where you execute burger selection
+            <p>
+            <div class="wrapper">
+                <div class="box a">
+                    <h2>The fireburger</h2>
+                    <img src="https://images.ohmyhosting.se/ie1i7Wt-F3j_nOJfadWoldwQ6iQ=/804x1078/smart/filters:quality(85)/https%3A%2F%2Fbastardburgers.com%2Fwp-content%2Fuploads%2Fsites%2F6%2F2020%2F12%2Fwebb-_0000s_0016_new-york.jpg.jpg"
+                        alt="">
+                    <ul>
+                        <li>Contains <span class="ingredients">beef</span> </li>
+                        <li>Contains <span class="ingredients">gluten</span> </li>
+                        <li>Onion</li>
+                    </ul>
+                </div>
+                <div class="box b">
+                    <h2>The chicken burger</h2>
+                    <img src="https://images.ohmyhosting.se/P5kVzNntfS_wg4c2XcSsY4mlUhA=/804x1078/smart/filters:quality(85)/https%3A%2F%2Fbastardburgers.com%2Fwp-content%2Fuploads%2Fsites%2F6%2F2022%2F01%2Fwebb-_0000s_0017_no-chicken-chicago.jpg.jpg"
+                        alt="">
+                    <ul>
+                        <li> contains <span class="ingredients">chicken</span> </li>
+                        <li> contains <span class="ingredients">gluten</span> </li>
+                        <li> contains <span class="ingredients">lactose</span> </li>
+                    </ul>
+                </div>
+                <div class="box c" >
+                    <h2>The vegan burger</h2>
+                    <img src="https://images.ohmyhosting.se/iHq3oKzy8yawj0Xl6gpRHrXkSFc=/804x1078/smart/filters:quality(85)/https%3A%2F%2Fbastardburgers.com%2Fwp-content%2Fuploads%2Fsites%2F6%2F2022%2F01%2Fwebb-_0000s_0001_GO-london.jpg.jpg"
+                        alt="">
+                    <ul>
+                        <li> contains <span class="ingredients">chicken</span> </li>
+                        <li> contains <span class="ingredients">gluten</span> </li>
+                        <li> contains <span class="ingredients">lactose</span> </li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+        <section id="customer">
+            <h2>Customer information</h2>
+            <p>This is where you provide neccessary information</p>
+            <form>
+                <p>
+                    <label for="fullname">First- and Last Name </label><br>
+                    <input type="text" id="fullname" name="n" required="required" placeholder="Full name">
+                </p>
+                <p>
+                    <label for="email">Email</label><br>
+                    <input type="email" id="email" name="em" required="required" placeholder="E-mail address">
+                </p>
+                <p>
+                    <label for="street">Street</label><br>
+                    <input type="text" id="street" name="st" required="required" placeholder="Street">
+                </p>
+                <p>
+                    <label for="housenumber">House</label><br>
+                    <input type="number" id="housenumber" name="h" required="required" placeholder="Housenumber">
+                </p>
+
+                <p>
+                    <label for="paymentmethods">Payment methods</label><br>
+                    <select id="payment" name="pmt">
+                        <option>Card</option>
+                        <option>Cash</option>
+                        <option>Swish</option>
+                        <option>Innvoice</option>
+                    </select>
+                </p>
+
+                <p>Gender</p>
+
+                <p>
+                    <input type="radio" id="female" name="gender" required="required">
+                    <label for="female">Female </label>
+                </p>
+                <p>
+                    <input type="radio" id="male" name="gender" required="required">
+                    <label for="male">Male </label>
+                </p>
+                <p>
+                    <input type="radio" id="dwp" name="gender" required="required">
+                    <label for="dwp">Do not wish to provide </label>
+                </p>
+            </form>
+        </section>
+        <main>
+            <button type="submit">
+                <img
+                    src="https://w7.pngwing.com/pngs/107/673/png-transparent-hamburger-barbecue-cheeseburger-barbecue-food-cheeseburger-cartoon.png">
+                Place order
+            </button>
+            <footer>
+                &copy 2018 vendelas burger
+            </footer>
+</body>
+
+</html>
